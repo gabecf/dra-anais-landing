@@ -26,7 +26,9 @@ export function SobreSection() {
                     <circle cx="12" cy="7" r="4" />
                   </svg>
                 </div>
-                <span className="text-sm font-medium">PLACEHOLDER: foto sobre da Dra. Ana Laís</span>
+                <span className="text-sm font-medium">
+                  PLACEHOLDER: foto sobre da Dra. Ana Laís
+                </span>
               </div>
 
               {/* Decorative accent */}
