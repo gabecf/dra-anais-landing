@@ -1,24 +1,46 @@
 import { createFileRoute } from "@tanstack/react-router";
 
-// No head() here: the home route inherits title/description/og/twitter from
-// __root.tsx, and ships no og:image so serve-time hosting can inject the
-// project's social preview (explicit og:image or latest screenshot).
+import { HeroSection } from "@/components/sections/hero";
+import { SobreSection } from "@/components/sections/sobre";
+import { ServicosSection } from "@/components/sections/servicos";
+import { DiferenciaisSection } from "@/components/sections/diferenciais";
+import { DepoimentosSection } from "@/components/sections/depoimentos";
+import { FaqSection } from "@/components/sections/faq";
+import { ContatoSection } from "@/components/sections/contato";
+import { Footer } from "@/components/sections/footer";
+import { WhatsAppButton } from "@/components/whatsapp-button";
+import { SITE_META } from "@/lib/config";
+
 export const Route = createFileRoute("/")({
+  head: () => ({
+    meta: [
+      { title: SITE_META.title },
+      { name: "description", content: SITE_META.description },
+      { property: "og:title", content: SITE_META.title },
+      { property: "og:description", content: SITE_META.description },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: SITE_META.title },
+      { name: "twitter:description", content: SITE_META.description },
+    ],
+  }),
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
 function Index() {
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
+    <main className="min-h-screen overflow-x-hidden">
+      <HeroSection />
+      <SobreSection />
+      <ServicosSection />
+      <DiferenciaisSection />
+      <DepoimentosSection />
+      <FaqSection />
+      <ContatoSection />
+      <Footer />
+
+      {/* Floating WhatsApp CTA */}
+      <WhatsAppButton variant="floating" aria-label="Abrir conversa no WhatsApp" />
+    </main>
   );
 }
