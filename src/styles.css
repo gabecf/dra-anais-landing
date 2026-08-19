@@ -262,11 +262,11 @@
 
 @utility card-lift {
   transition: transform 0.35s ease, box-shadow 0.35s ease;
-}
 
-@utility card-lift:hover {
-  transform: translateY(-0.375rem);
-  box-shadow: 0 20px 40px -12px oklch(0.25 0.08 250 / 0.12);
+  &:hover {
+    transform: translateY(-0.375rem);
+    box-shadow: 0 20px 40px -12px oklch(0.25 0.08 250 / 0.12);
+  }
 }
 
 @utility btn-pulse {
@@ -275,24 +275,25 @@
 
 @keyframes btn-pulse {
   0%, 100% {
-    box-shadow: 0 0 0 0 oklch(0.35 0.65 145 / 0.35);
+    box-shadow: 0 0 0 0 oklch(0.45 0.55 145 / 0.35);
   }
   50% {
-    box-shadow: 0 0 0 10px oklch(0.35 0.65 145 / 0);
+    box-shadow: 0 0 0 10px oklch(0.45 0.55 145 / 0);
   }
 }
 
 @utility divider-gold {
   width: 4rem;
   height: 2px;
-  background: linear-gradient(90deg, var(--color-champagne), var(--color-blush));
+  background: linear-gradient(90deg, var(--champagne), var(--blush));
   border-radius: 9999px;
 }
 
 @utility bg-gradient-hero {
-  background: linear-gradient(135deg, var(--color-cream) 0%, var(--color-background) 50%, var(--color-blush-light) 100%);
+  background: linear-gradient(135deg, var(--cream) 0%, var(--background) 50%, var(--blush-light) 100%);
 }
 
 @utility bg-gradient-navy {
-  background: linear-gradient(135deg, var(--color-navy-dark) 0%, var(--color-navy) 100%);
+  background: linear-gradient(135deg, var(--navy-dark) 0%, var(--navy) 100%);
 }
+
