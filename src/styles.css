@@ -282,13 +282,6 @@
   }
 }
 
-@utility divider-gold {
-  width: 4rem;
-  height: 2px;
-  background: linear-gradient(90deg, var(--champagne), var(--blush));
-  border-radius: 9999px;
-}
-
 @utility bg-gradient-hero {
   background: linear-gradient(135deg, var(--cream) 0%, var(--background) 50%, var(--blush-light) 100%);
 }

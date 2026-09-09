@@ -9,13 +9,7 @@ export function ContatoSection() {
         <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
           <div>
             <ScrollReveal>
-              <span className="text-sm font-medium uppercase tracking-widest text-champagne">
-                Agende sua consulta
-              </span>
-            </ScrollReveal>
-
-            <ScrollReveal delay={100}>
-              <h2 className="mt-3 text-balance text-3xl font-semibold leading-tight text-primary-foreground md:text-4xl">
+              <h2 className="text-balance text-3xl font-semibold leading-tight text-primary-foreground md:text-4xl">
                 Dê o primeiro passo com quem entende o seu processo
               </h2>
             </ScrollReveal>

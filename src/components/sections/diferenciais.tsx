@@ -40,13 +40,7 @@ export function DiferenciaisSection() {
       <div className="container-tight">
         <div className="mx-auto max-w-2xl text-center">
           <ScrollReveal>
-            <span className="text-sm font-medium uppercase tracking-widest text-champagne">
-              Por que nos escolher
-            </span>
-          </ScrollReveal>
-
-          <ScrollReveal delay={100}>
-            <h2 className="mt-3 text-balance text-3xl font-semibold leading-tight text-primary-foreground md:text-4xl">
+            <h2 className="text-balance text-3xl font-semibold leading-tight text-primary-foreground md:text-4xl">
               A diferença de um acompanhamento médico sério
             </h2>
           </ScrollReveal>

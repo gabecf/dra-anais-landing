@@ -41,19 +41,9 @@ export function ServicosSection() {
       <div className="container-tight">
         <div className="mx-auto max-w-2xl text-center">
           <ScrollReveal>
-            <span className="text-sm font-medium uppercase tracking-widest text-muted-foreground">
-              O que oferecemos
-            </span>
-          </ScrollReveal>
-
-          <ScrollReveal delay={100}>
-            <h2 className="mt-3 text-balance text-3xl font-semibold leading-tight text-foreground md:text-4xl">
+            <h2 className="text-balance text-3xl font-semibold leading-tight text-foreground md:text-4xl">
               Cuidado médico em cada etapa do seu emagrecimento
             </h2>
-          </ScrollReveal>
-
-          <ScrollReveal delay={150}>
-            <div className="divider-gold mx-auto mt-6" />
           </ScrollReveal>
 
           <ScrollReveal delay={200}>
