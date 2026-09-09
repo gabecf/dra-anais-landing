@@ -13,7 +13,7 @@ export function HeroSection() {
           <div className="text-center lg:text-left">
             <ScrollReveal delay={100}>
               <h1 className="mx-auto max-w-2xl text-balance text-4xl font-semibold leading-[1.15] text-foreground md:text-5xl lg:mx-0 lg:text-6xl">
-                Você não precisa emagrecer sozinha outra vez
+                Cada corpo pede um caminho diferente até uma saúde melhor
               </h1>
             </ScrollReveal>
 
