@@ -19,8 +19,8 @@ export function HeroSection() {
 
             <ScrollReveal delay={200}>
               <p className="mx-auto mt-6 max-w-xl text-balance text-lg leading-relaxed text-muted-foreground md:text-xl lg:mx-0">
-                Acompanhamento médico especializado em obesidade, emagrecimento e nutrologia para
-                mulheres que querem resultados reais, sustentáveis e com saúde.
+                Acompanhamento médico especializado em nutrologia, obesidade e saúde metabólica,
+                com método personalizado para cada caso.
               </p>
             </ScrollReveal>
 
